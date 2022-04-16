@@ -34,9 +34,11 @@ dt = 0.002
 while ball.pos.y >= rad:
     rate(100)
     t = t + dt
+    vrel = ball.vel - vwind
     a = g - 0.5*A*C*rho*mag(vrel)**2*norm(vrel)/m
     ball.vel = ball.vel + a*dt
     ball.pos = ball.pos + ball.vel*dt
-    vrel = ball.vel - vwind
+
+
     
 print(ball.pos)
