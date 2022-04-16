@@ -36,7 +36,7 @@ t_full = 2*pi*h/v0
 #print(mag(ship.pos))
 
 
-while t < t_full:
+while t < 0.1:
     rate(100)
     t = t + dt
     a = -G*M/(mag(ship.pos)**2)*norm(ship.pos)
