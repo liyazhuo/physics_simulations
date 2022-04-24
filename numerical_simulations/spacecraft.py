@@ -9,6 +9,8 @@ from pickle import GLOBAL
 from vpython import *
 import pylab as plt
 
+#All variables have the standard scientific units, ie. distance - meter, time - second, mass - kg, etc
+
 #set up black hole
 M = 8.0*10**30 #Mass of the black hole
 G = 6.67*10**(-11) #gravitational constant
@@ -27,7 +29,7 @@ ship = sphere(pos = vector(h,0,0), vel=vector(v0*cos(theta),v0*sin(theta),0), ra
 
 # Move spaceship via loop
 t = 0.0 
-dt = 0.04 #time step
+dt = 0.0001 #time step
 t_full = 2*pi*h/v0 #running time for orbit of a full circle
 
 
